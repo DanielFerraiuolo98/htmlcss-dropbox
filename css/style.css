@@ -72,7 +72,7 @@ body{
     width: 100%;
   }
 
-  a{
+  header a{
     padding-left: 30px;
     text-decoration: none;
     color: var(--color-dark);
@@ -99,12 +99,8 @@ h1{
     padding: 20px;
 }
 
-p{
-    padding-left: 40px;
-}
-
 .btn-blue-big{
-    margin: 40px;
+    margin:20px;
     background-color: var(--color-blue);
     color: var(--color-white);
     padding: 10px;
@@ -155,7 +151,6 @@ p{
 .container-cards > div{
     border: 1px solid var(--color-dark);
     width: 100%;
-    text-align: center;
 }
 
 .user{
@@ -169,25 +164,54 @@ p{
     padding-bottom: 50px;
 }
 
-.fa-folder{
-    padding: 10px 0;
+.fa-user,
+.fa-folder,
+.fa-share-nodes,
+.fa-users,
+.fa-building{
+  padding: 10px;
 }
 
-.archiviazione{
-    padding: 10px 5px;
+h3{
+  padding-bottom: 20px;
+  font-size: 20px;
 }
 
-.acquisto{
-    color: blue;
-    cursor: pointer;
+h4{
+  padding: 50px;
 }
 
-.acquisto:hover{
-    text-decoration: underline;
+.margin-bottom{
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.check{
+  padding: 10px;
 }
 
 .fa-check{
     color: blue;
+}
+
+.icons{
+  text-align: center;
+}
+
+.button{
+  padding: 20px;
+}
+
+.btn-blue-big-cards{
+  width: 80%;
+  margin-left: 30px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+}
+
+.btn-blue-big-cards:hover{
+  cursor: pointer;
 }
 
 footer{
