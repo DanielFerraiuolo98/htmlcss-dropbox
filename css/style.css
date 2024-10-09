@@ -36,6 +36,7 @@ body{
   .container{
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
   }
 
   .container-small{
@@ -92,7 +93,61 @@ body{
     background-color: var(--color-light-blue);
 }
 
-  footer{
+h1{
+    font-size: 4em;
+    text-align: center;
+    padding: 20px;
+}
+
+p{
+    padding-left: 40px;
+}
+
+.btn-blue-big{
+    margin: 40px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 10px;
+}
+
+.btn-blue-big:hover{
+    cursor: pointer;
+}
+
+.fa-arrow-down{
+    font-size: 40px;
+    padding: 40px;
+}
+
+.fa-arrow-down:hover{
+    cursor: pointer;
+}
+
+.jumbo-text{
+    width: 30%;
+    flex-direction: column; 
+    padding-top: 70px;
+}
+
+.jumbo-img{
+    width: 70%;
+    position: relative;
+    top: 70px;
+}
+
+.jumbo-img img{
+    width: 100%;
+}
+
+#plane{
+    margin-top: 70px;
+}
+
+.input-2{
+    padding-left: 30px;
+}
+
+footer{
     background-color: var(--color-dark);
     color: var(--color-white);
   }
