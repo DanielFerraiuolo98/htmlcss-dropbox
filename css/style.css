@@ -4,3 +4,95 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --color-light-blue: #b4d0e7;
+    --color-dark: #000000;
+    --color-blue: #0061ff;
+    --color-grey: #f5f5f5;
+    --color-contrast: #753f63;
+    --color-white: #ffffff;
+    --color-logo-green: #a2d39b;
+    --color-logo-second: #61082b;
+    --color-logo-third: #0093ce;
+    --color-logo-light-red: #ff1c1c;
+    --color-logo-red: #d5001f;
+    --color-logo-blue: #0d2481;
+    --color-logo-yellow: #ffd830;
+  }
+
+  .debug{
+    border: 1px solid red;
+  }
+
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .container-small{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  header{
+    background-color: var(--color-white);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  ul{
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .d-flex{
+    display: flex;
+  }
+
+  .justify-content{
+    justify-content: space-between;
+  }
+
+  header > nav{
+    width: 100%;
+  }
+
+  a{
+    padding-left: 30px;
+    text-decoration: none;
+    color: var(--color-dark);
+  }
+
+  .btn-blue{
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 10px 20px;
+  }
+
+  .btn-blue:hover{
+    cursor: pointer;
+  }
+
+.jumbo{
+    padding-top: 80px;
+    background-color: var(--color-light-blue);
+}
+
+  footer{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+  }
