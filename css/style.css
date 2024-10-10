@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 html{
@@ -27,6 +28,7 @@ body{
     --color-logo-red: #d5001f;
     --color-logo-blue: #0d2481;
     --color-logo-yellow: #ffd830;
+    --color-border-logo: #d1e9cd;
   }
 
   .debug{
@@ -267,6 +269,95 @@ h4{
 
 .container-text-small{
   flex-direction: column;
+}
+
+.team{
+  padding: 20px 0;
+}
+
+.customer-brands > div{
+  width: calc(100% / 3);
+  flex-wrap: wrap;
+}
+
+.customer-brands-small{
+  height: calc(100vw/3);
+}
+
+.brand{
+  height: 50%;
+  width: 50%;
+}
+
+.brand-central img{
+  width: 50%;
+  padding: 20px;
+}
+
+.brand-central{
+  overflow-y: auto;
+}
+
+.img-1{
+  background-color: var(--color-logo-green);
+}
+
+.img-1:hover{
+  cursor: pointer;
+  border: 10px solid var(--color-border-logo);
+}
+
+.img-2{
+  background-color: var(--color-logo-second);
+}
+
+.img-3{
+  background-color: var(--color-logo-third);
+}
+
+.img-4{
+  background-color: var(--color-logo-red);
+}
+
+.img-5{
+  background-color: var(--color-logo-light-red);
+}
+
+.img-6{
+  background-color: var(--color-light-blue);
+}
+
+.img-7{
+  background-color: var(--color-logo-blue);
+}
+
+.img-8{
+  background-color: var(--color-logo-yellow);
+}
+
+.brand img{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  filter: invert(100%);
+}
+
+#cta{
+  background-color: var(--color-light-blue);
+}
+
+#cta h2{
+  color: var(--color-contrast);
+  padding: 50px;
+}
+
+#cta button{
+  margin: 50px;
+  padding: 10px 20px;
+}
+
+#cta button:hover{
+  cursor: pointer;
 }
 
 footer{
