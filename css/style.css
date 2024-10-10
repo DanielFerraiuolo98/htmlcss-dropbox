@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    flex-wrap: wrap;
 }
 
 html{
@@ -31,10 +30,6 @@ body{
     --color-border-logo: #d1e9cd;
   }
 
-  .debug{
-    border: 1px solid red;
-  }
-
   .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -48,13 +43,14 @@ body{
 
   header{
     background-color: var(--color-white);
-    padding: 20px;
+    padding: 0 20px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     flex-wrap: wrap;
+    box-shadow: 0 1px;
   }
 
   ul{
@@ -76,16 +72,21 @@ body{
   }
 
   header a{
-    padding-left: 20px;
+    padding: 20px;
+    display: block;
     text-decoration: none;
     color: var(--color-dark);
+  }
+
+  header a:hover{
+    text-decoration: underline;
   }
 
   .btn-blue{
     background-color: var(--color-blue);
     color: var(--color-white);
     padding: 6px 20px;
-    margin-left: 10px;
+    margin: 10px;
   }
 
   .btn-blue:hover{
@@ -150,6 +151,7 @@ h1{
 .container-cards{
     gap: 10px;
     width: calc((100% - 20) / 3 );
+    padding-top: 50px;
 }
 
 .container-cards > div{
@@ -208,6 +210,7 @@ h4{
 
 .icons{
   text-align: center;
+  padding-top: 50px;
 }
 
 .enterprise h3, 
@@ -226,6 +229,7 @@ h4{
 
 .partner{
   width: 100%;
+  padding: 50px;
 }
 
 .partener-text{
@@ -250,6 +254,7 @@ h4{
 .business{
   font-size: 30px;
   text-align: center;
+  padding-top: 50px;
 }
 
 .row{
@@ -259,7 +264,7 @@ h4{
 
 .column{
   width: calc((100% - 10px) / 3);
-  position: relative;
+  padding: 50px;
 }
 
 .column img{
@@ -272,7 +277,7 @@ h4{
 }
 
 .team{
-  padding: 20px 0;
+  padding: 50px 0;
 }
 
 .customer-brands > div{
@@ -344,6 +349,7 @@ h4{
 
 #cta{
   background-color: var(--color-light-blue);
+  padding: 50px;
 }
 
 #cta h2{
@@ -360,7 +366,62 @@ h4{
   cursor: pointer;
 }
 
+#faq{
+  padding: 50px;
+}
+
+#faq h2{
+  padding: 50px;
+}
+
+.domande{
+  border-top: 1px solid var(--color-grey);
+  border-bottom: 1px solid var(--color-grey);
+  padding: 50px;
+}
+
+.domande-hover{
+  display: none;
+}
+
+.fa-caret-down{
+  padding: 20px;
+}
+
+.fa-caret-down:hover{
+  cursor: pointer;
+}
+
+.fa-caret-down:hover .domande-hover{
+  display: block;
+}
+
 footer{
     background-color: var(--color-dark);
     color: var(--color-white);
+  }
+
+  footer ul span{
+    padding: 10px;
+  }
+
+  footer ul li{
+    padding: 10px;
+  }
+
+  footer ul a{
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
+  footer ul a:hover{
+    text-decoration: underline;
+  }
+
+  .footer-top{
+    padding-top: 50px;
+  }
+
+  .footer-bottom{
+    padding-top: 50px;
   }
