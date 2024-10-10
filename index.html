@@ -12,9 +12,10 @@
 </head>
 <body>
     <header class="debug d-flex justify-content">
-        <img src="img/logo-small.png" alt="logo Dropbox">
+        
         <nav class="debug d-flex justify-content">
             <ul class="d-flex">
+                <a href="#"><img src="img/logo-small.png" alt="logo Dropbox"></a>
                 <a href="#">
                     <li>Perchè Dropbox</li>
                 </a>
@@ -35,11 +36,12 @@
                 <a href="#">
                     <li>Accedi</li>
                 </a>
+                <li>
+                    <a href="#" class="btn-blue">Inizia</a>
+                </li>
             </ul>
         </nav>
-        <a href="#">
-            <button class="btn-blue">Inizia</button>
-        </a> 
+        
     </header>
     <main>
         <section class="debug jumbo">
@@ -54,7 +56,7 @@
                             Inizia la tua prova gratuita
                         </button>
                         <p>Annulla in qualsiasi momento</p>
-                        <a href="#cta">
+                        <a href="#plans">
                             <i class="fa-solid fa-arrow-down"></i>
                         </a>
                     </div>
@@ -65,235 +67,122 @@
             </div>
         </section>
 
-        <section id="plane" class="debug">
+        <section id="plans" class="debug">
             <div class="container-small debug">
                 <h2>Trova il piano di business che fa per te</h2>
                 <span>
-                    <input type="radio" name="fatturazione" id="mensile">Fatturazione mensile
+                    <input type="radio" name="fatturazione" id="mensile" checked>Fatturazione mensile
                 </span>
                 <span class="input-2">
                     <input type="radio" name="fatturazione" id="annuale">Fatturazione annuale
                 </span>
 
                 <div class="container-cards d-flex justify-content debug">
-                        <div>
-                            <p class="icons">
-                                <i class="fa-solid fa-user debug"></i>
-                                <span>Singolo</span>
-                            </p>
-                            
-                            <div class="user d-flex debug">
-                                <p>
-                                    <h3>Professional</h3>
-                                    <span>&euro;12.00</span>
-                                    <span class="grey">/mese</span>
-                                </p>   
+                        <div class="debug border">
+                            <div class="mini-border">
+                                <i class="fa-solid fa-user"></i>
+                            <span>Singolo</span>
                             </div>
-
-                            <div class="d-flex debug">
-                                <i class="fa-solid fa-user debug"></i>
-                                <span>1 utente</span>
-                            </div>
-                            <div class="d-flex debug">
-                                <i class="fa-solid fa-folder debug"></i>
-                                <span class="debug">5 TB di spazio di archiviazione sicuro</span>
-                            </div>
-                            <div class="d-flex debug">
-                                <i class="fa-solid fa-share-nodes debug"></i>
-                                <span>funzioni di produttività premium <br> e condivisione file semplice e <br> sicura</span>
-                            </div>
-
-                            <div class="button">
-                                <button class="btn-blue-big-cards debug">prova gratis per 30 giorni</button>
-                            </div>
-
                             <div class="d-flex">
-                                <p>
-                                    <span class="margin-bottom">Oppure</span> 
-                                    <a href="#" class="acquisto">acquista ora</a>
-                                </p>  
-                            </div>
-                            
-                            <div>
-                                <h4>Punti salienti del piano</h4>
-                                <div class="d-flex">
-                                    <p class="check d-flex">
-                                        <i class="fa-solid fa-check"></i>
-                                        <span class="debug">Invia fino a 100 GB con Dropbox transfert</span>
-                                    </p>
-                                    
-                                </div>
+                                <div class="professional">
+                                    <h3>Professional</h3>
+                                    <p><strong>&euro;12.00</strong></p>
+                                    <p class="text-grey">/mese</p>
 
-                                <div class="d-flex">
-                                    <p class="check d-flex">
-                                        <i class="fa-solid fa-check"></i>
-                                        <span>Cartelle offline su dispositivi mobile</span>
-                                    </p>  
-                                </div>
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fa-solid fa-user"></i></span><span>1 utente</span></li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span>5 TB di spazio di archiviazione sicuro</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                                      </ul>
+
+                                      <button class="btn-blue-big">Prova gratis per 30 giorni</button>
+
+                                      <p><span class="border-bottom">Oppure</span> <a href="#">acquista ora</a></p>
+
+                                      <h4>Punti Salienti del piano</h4>
+
+                                      <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><span>Invia file fino a 100 GB con Dropbox Transfert</span></li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su dispositivi mobile</li>    
+                                </div>  
                             </div>
                         </div>
-
-                        <div>
-                            <p class="icons">
+                        
+                        <div class="debug border">
+                            <div class="mini-border">
                                 <i class="fa-solid fa-users"></i>
                                 <span>Team</span>
-                            </p>
-                            
-                            <div>
-                                <div class="user d-flex">
-                                    <p class="d-flex"> 
-                                        <h3>Advanced</h3>
-                                        <span>&euro;18.00</span>
-                                        <span class="grey">/utente/mese</span>
-                                    </p>    
-                                </div>
-    
-                                <div class="d-flex debug">
-                                    <i class="fa-solid fa-users debug"></i>
-                                    <p class="utenti">3 o più utenti</p>  
-                                </div>
-
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-folder"></i>
-                                    <p>tutto lo spazio di cui ha bisogno il tuo team</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-share-nodes"></i>
-                                    <p>sofisticate funzioni di controllo e <br> per tenere al sicuro tutti i file del <br> tuo team</p>
-                                </div>
-
-                                <div class="button">
-                                    <button class="btn-blue-big-cards debug">prova gratis per 30 giorni</button>
-                                </div>
-                                
-    
-                                <div class="d-flex">
-                                    <p>
-                                        <span class="margin-bottom">Oppure</span> 
-                                        <a href="#" class="acquisto">acquista ora</a>
-                                    </p>  
-                                </div>
-                                
-                                <div>
-                                    <h4>Punti salienti del piano</h4>
-                                    <div class="d-flex">
-                                        <p class="check d-flex">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Nessun limite di spazio per i file</span>
-                                        </p>
-                                        
-                                    </div>
-    
-                                    <div class="d-flex">
-                                        <p class="check d-flex">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Cartelle offline su dispositivi mobile</span>
-                                        </p>  
-                                    </div>
-
-                                    <div class="d-flex">
-                                        <p class="check d-flex">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Risparmio del 50% rispetto alle iscrizioni singole</span>
-                                        </p>  
-                                    </div>
-
-                                    <div class="d-flex">
-                                        <p class="check d-flex">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Possibilità di inserire nuovi membri del team</span>
-                                        </p>  
-                                    </div>
-
-                                    <div class="d-flex">
-                                        <p class="check d-flex">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Gestione dei permessi in base ai ruoli</span>
-                                        </p>  
-                                    </div>
-                                </div>
                             </div>
+                            <div class="professional">
+                                <h3>Advanced</h3>
+                                <p><strong>&euro;18.00</strong></p>
+                                <p class="text-grey">/utente/mese</p>
+
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa-solid fa-users"></i></span><span>3 o più utenti</span></li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span>Tutto lo spazio di cui ha bisogno il tuo team</li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</li>
+                                  </ul>
+
+                                  <button class="btn-blue-big">Prova gratis per 30 giorni</button>
+
+                                  <p><span class="border-bottom">Oppure</span> <a href="#">acquista ora</a></p>
+
+                                  <h4>Punti Salienti del piano</h4>
+
+                                  <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><span>Nessun limite di spazio per i file</span></li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Cartelle offline su dispositivi mobile</li>   
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><span>Risparmio del 50% rispetto alle iscrizioni singole</span></li>
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><span>Possibilità di inserire nuovi membri del team</span></li> 
+                                    <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><span>Gestione dei permessi in base ai ruoli</span></li>
+                            </div>  
                         </div>
-                    
-                    
-                        <div>
-                            <p class="icons">
+
+
+                        <div class="debug border">
+                            <div class="mini-border">
                                 <i class="fa-solid fa-building"></i>
                                 <span>Azienda</span>
-                            </p>
-                            
-                                <div class="user d-flex">
-                                    <p class="d-flex">
-                                        <h3>Enterprise</h3>
-                                        <span>Contattaci</span>
-                                        <span class="grey">-</span>
-                                    </p>    
-                                </div>
-    
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-user"></i>
-                                    <p>10 o più utenti</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-folder"></i>
-                                    <p>soluzione personalizzabili per la tua azienda</p>
-                                </div>
-
-                                <div class="d-flex">
-                                    <i class="fa-solid fa-share-nodes"></i>
-                                    <p>assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</p>
-                                </div>
-    
-                               <div class="button">
-                                    <button class="btn-blue-big-cards debug">Contattaci</button>
-                                </div>
-
-                                <div class="d-flex">
-                                    <p>
-                                        <span class="margin-bottom">Oppure</span> 
-                                        <a href="#" class="acquisto">acquista ora</a>
-                                    </p>  
-                                </div>
-                                
-                                <div>
-                                    <h4>Punti salienti del piano</h4>
-                                    <div class="d-flex">
-                                        <p class="check d-flex">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Cartelle offline su dispositivi mobile</span>
-                                        </p>  
-                                    </div>
-    
-                                    <div class="d-flex">
-                                        <p class="check d-flex">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Servizio assistenza 24/h</span>
-                                        </p>  
-                                    </div>
-
-                                    <div class="d-flex">
-                                        <p class="check d-flex">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Possibilità di personalizzazione totale</span>
-                                        </p>  
-                                    </div>
-                                </div>
                             </div>
+                            <div class="professional">
+                                    <h3>Enterprise</h3>
+                                    <p><strong>&euro;Contattaci</strong></p>
+                                    <p class="text-grey">-</p>
+
+                                    <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fa-solid fa-user"></i></span><span>10 o più utenti</span></li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-folder"></i></span>Soluzioni personalizzabili per la tua azienda</li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-share-nodes"></i></span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</li>
+                                      </ul>
+
+                                      <button class="btn-blue-big">Contattaci</button>
+
+                                      <p><span class="border-bottom">Oppure</span> <a href="#">acquista ora</a></p>
+
+                                      <h4>Punti Salienti del piano</h4>
+
+                                      <ul class="fa-ul">
+                                        <li><span class="fa-li"><i class="fa-solid fa-check"></i></span><span>Cartelle offline su dispositivi mobile</span></li>
+                                        <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Servizio assistenza 24/h</li>    
+                                        <li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Possibilità di personalizzazione totale</li>    
+                                </div>  
                         </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="debug">
-            <div class="container-small debug">
+            <div class="container-small">
                 <div>
-                    <p class="icons">
+                    <p class="icons mini-border">
                         <i class="fa-solid fa-building"></i>
                         <span>Team</span>
                     </p>
                 </div>
-                <div class="d-flex debug">
-                    <div class="debug enterprise">
+                <div class="d-flex mini-border">
+                    <div class="enterprise">
                         <h3>Enterprise</h3>
                         <p>Contatta l'ufficio vendite per i prezzi</p>
                         <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su <br> qualsiasi scala</p>
@@ -305,7 +194,16 @@
 
         <section class="debug">
             <div class="container-small debug">
-                partner
+                <div class="d-flex">
+                    <div class="img-partner">
+                        <img class="partner" src="img/partner.png" alt="img partner">
+                    </div>
+                    <div class="partener-text d-flex justify-content">
+                        <h2>Entra in contatto con un partner Dropbox</h2>
+                        <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                        <button class="btn-partner">Trova un partner</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -316,7 +214,7 @@
         </section>
 
         <section class="debug">
-            <div class="container-small debug">
+            <div class="debug">
                loghi
             </div>
         </section>

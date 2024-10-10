@@ -17,7 +17,7 @@ body{
     --color-light-blue: #b4d0e7;
     --color-dark: #000000;
     --color-blue: #0061ff;
-    --color-grey: #f5f5f5;
+    --color-grey: #9d9c9c;
     --color-contrast: #753f63;
     --color-white: #ffffff;
     --color-logo-green: #a2d39b;
@@ -52,6 +52,7 @@ body{
     left: 0;
     width: 100%;
     z-index: 1000;
+    flex-wrap: wrap;
   }
 
   ul{
@@ -73,7 +74,7 @@ body{
   }
 
   header a{
-    padding-left: 30px;
+    padding-left: 20px;
     text-decoration: none;
     color: var(--color-dark);
   }
@@ -81,7 +82,8 @@ body{
   .btn-blue{
     background-color: var(--color-blue);
     color: var(--color-white);
-    padding: 10px 20px;
+    padding: 6px 20px;
+    margin-left: 10px;
   }
 
   .btn-blue:hover{
@@ -135,7 +137,7 @@ h1{
     width: 100%;
 }
 
-#plane{
+#plans{
     margin-top: 70px;
 }
 
@@ -145,7 +147,7 @@ h1{
 
 .container-cards{
     gap: 10px;
-    width: calc((100% / 3) - 20);
+    width: calc((100% - 20) / 3 );
 }
 
 .container-cards > div{
@@ -153,66 +155,6 @@ h1{
     width: 100%;
 }
 
-.user{
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 10px;
-}
-
-.grey{
-    color: grey;
-    padding-bottom: 50px;
-}
-
-.fa-user,
-.fa-folder,
-.fa-share-nodes,
-.fa-users,
-.fa-building{
-  padding: 10px;
-}
-
-h3{
-  padding-bottom: 20px;
-  font-size: 20px;
-}
-
-h4{
-  padding: 50px;
-}
-
-.margin-bottom{
-  padding-bottom: 20px;
-  border-bottom: 1px solid grey;
-}
-
-.check{
-  padding: 10px;
-}
-
-.fa-check{
-    color: blue;
-}
-
-.icons{
-  text-align: center;
-}
-
-.button{
-  padding: 20px;
-}
-
-.btn-blue-big-cards{
-  width: 80%;
-  margin-left: 30px;
-  background-color: blue;
-  color: white;
-  padding: 10px;
-}
-
-.btn-blue-big-cards:hover{
-  cursor: pointer;
-}
 
 .btn-blue-big-enterprise{
   background-color: var(--color-blue);
@@ -221,11 +163,84 @@ h4{
   margin: 50px;
 }
 
+.border{
+  text-align: center;
+  border: 1px solid var(--color-grey);
+}
+
+.mini-border{
+  border: 1px solid var(--color-grey);
+}
+
+.professional{
+  padding: 20px;
+}
+
+.professional p{
+  text-align: left;
+  padding-left: 15px;
+}
+
+.text-grey{
+  color: var(--color-grey);
+}
+
+li{
+  text-align: left;
+  padding: 5px;
+}
+
+.border-bottom{
+  border-bottom: 1px solid
+  var(--color-grey);
+  padding-bottom: 20px;
+}
+
+h4{
+  padding-top: 60px;
+}
+
+.fa-check{
+  color: var(--color-blue);
+}
+
+.icons{
+  text-align: center;
+}
+
+.enterprise h3, 
 .enterprise p{
   padding: 10px;
 }
 
 .btn-blue-big-enterprise:hover{
+  cursor: pointer;
+}
+
+.img-partner{
+  width: 70%;
+}
+
+.partner{
+  width: 100%;
+}
+
+.partener-text{
+  width: 30%;
+  flex-direction: column;
+  justify-content: center
+}
+
+.partener-text h2, p{
+  padding: 20px;
+}
+
+.btn-partner{
+  margin: 0 80px 80px;
+  padding: 10px;
+}
+
+.btn-partner:hover{
   cursor: pointer;
 }
 
