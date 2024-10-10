@@ -30,6 +30,16 @@ body{
     --color-border-logo: #d1e9cd;
   }
 
+  .d-flex{
+    display: flex;
+  }
+
+  .justify-content{
+    justify-content: space-between;
+  }
+
+  /*containers*/
+
   .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -39,6 +49,21 @@ body{
   .container-small{
     max-width: 1000px;
     margin: 0 auto;
+  }
+
+  .container-cards{
+    gap: 10px;
+    width: calc((100% - 20) / 3 );
+    padding-top: 50px;
+  }
+
+  .container-cards > div{
+    border: 1px solid var(--color-dark);
+    width: 100%;
+  }
+
+  .container-text-small{
+    flex-direction: column;
   }
 
   header{
@@ -59,14 +84,6 @@ body{
     padding-top: 10px;
   }
 
-  .d-flex{
-    display: flex;
-  }
-
-  .justify-content{
-    justify-content: space-between;
-  }
-
   header > nav{
     width: 100%;
   }
@@ -82,6 +99,8 @@ body{
     text-decoration: underline;
   }
 
+  /*buttons*/
+
   .btn-blue{
     background-color: var(--color-blue);
     color: var(--color-white);
@@ -93,6 +112,47 @@ body{
     cursor: pointer;
   }
 
+  .btn-blue-big{
+    margin:20px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 10px;
+}
+
+.btn-blue-big:hover{
+    cursor: pointer;
+}
+
+.btn-blue-big-enterprise{
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: 10px;
+  margin: 50px;
+}
+
+.btn-blue-big-enterprise:hover{
+  cursor: pointer;
+}
+
+.btn-partner{
+  margin: 0 80px 80px;
+  padding: 10px;
+}
+
+.btn-partner:hover{
+  cursor: pointer;
+}
+
+#cta button{
+  margin: 50px;
+  padding: 10px 20px;
+}
+
+#cta button:hover{
+  cursor: pointer;
+}
+
+/*jumbotron*/
 .jumbo{
     padding-top: 80px;
     background-color: var(--color-light-blue);
@@ -102,17 +162,6 @@ h1{
     font-size: 4em;
     text-align: center;
     padding: 20px;
-}
-
-.btn-blue-big{
-    margin:20px;
-    background-color: var(--color-blue);
-    color: var(--color-white);
-    padding: 10px;
-}
-
-.btn-blue-big:hover{
-    cursor: pointer;
 }
 
 .fa-arrow-down{
@@ -140,31 +189,13 @@ h1{
     width: 100%;
 }
 
+/*plans*/
 #plans{
     margin-top: 70px;
 }
 
 .input-2{
     padding-left: 30px;
-}
-
-.container-cards{
-    gap: 10px;
-    width: calc((100% - 20) / 3 );
-    padding-top: 50px;
-}
-
-.container-cards > div{
-    border: 1px solid var(--color-dark);
-    width: 100%;
-}
-
-
-.btn-blue-big-enterprise{
-  background-color: var(--color-blue);
-  color: var(--color-white);
-  padding: 10px;
-  margin: 50px;
 }
 
 .border{
@@ -208,6 +239,7 @@ h4{
   color: var(--color-blue);
 }
 
+/*enterprise*/
 .icons{
   text-align: center;
   padding-top: 50px;
@@ -218,10 +250,7 @@ h4{
   padding: 10px;
 }
 
-.btn-blue-big-enterprise:hover{
-  cursor: pointer;
-}
-
+/*partner*/
 .img-partner{
   width: 70%;
   display: block;
@@ -242,15 +271,7 @@ h4{
   padding: 20px;
 }
 
-.btn-partner{
-  margin: 0 80px 80px;
-  padding: 10px;
-}
-
-.btn-partner:hover{
-  cursor: pointer;
-}
-
+/*business*/
 .business{
   font-size: 30px;
   text-align: center;
@@ -272,10 +293,7 @@ h4{
   display: block;
 }
 
-.container-text-small{
-  flex-direction: column;
-}
-
+/*brand*/
 .team{
   padding: 50px 0;
 }
@@ -347,6 +365,7 @@ h4{
   filter: invert(100%);
 }
 
+/*cta*/
 #cta{
   background-color: var(--color-light-blue);
   padding: 50px;
@@ -357,15 +376,7 @@ h4{
   padding: 50px;
 }
 
-#cta button{
-  margin: 50px;
-  padding: 10px 20px;
-}
-
-#cta button:hover{
-  cursor: pointer;
-}
-
+/*faq*/
 #faq{
   padding: 50px;
 }
@@ -396,6 +407,7 @@ h4{
   display: block;
 }
 
+/*footer*/
 footer{
     background-color: var(--color-dark);
     color: var(--color-white);
