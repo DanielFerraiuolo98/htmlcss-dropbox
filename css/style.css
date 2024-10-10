@@ -214,6 +214,21 @@ h4{
   cursor: pointer;
 }
 
+.btn-blue-big-enterprise{
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: 10px;
+  margin: 50px;
+}
+
+.enterprise p{
+  padding: 10px;
+}
+
+.btn-blue-big-enterprise:hover{
+  cursor: pointer;
+}
+
 footer{
     background-color: var(--color-dark);
     color: var(--color-white);
