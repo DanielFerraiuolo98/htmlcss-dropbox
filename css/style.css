@@ -219,6 +219,7 @@ h4{
 
 .img-partner{
   width: 70%;
+  display: block;
 }
 
 .partner{
@@ -242,6 +243,30 @@ h4{
 
 .btn-partner:hover{
   cursor: pointer;
+}
+
+.business{
+  font-size: 30px;
+  text-align: center;
+}
+
+.row{
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.column{
+  width: calc((100% - 10px) / 3);
+  position: relative;
+}
+
+.column img{
+  width: 100%;
+  display: block;
+}
+
+.container-text-small{
+  flex-direction: column;
 }
 
 footer{
